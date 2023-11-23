@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Oswald:wght@500;600&family=Poppins:wght@100;300;400;600;700&family=Teko:wght@500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!-- navigation bar -->
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="./img/clg_logo.png" alt="logo"></a>
+            
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" id="menuicons" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="resources.html">RESOURCES</a></li>
+                    <li><a href="projects.html">PROJECTS</a></li>
+                    <li><a href="value,added.program.html">VALUE ADDED PROGRAMS</a></li>
+                    <li><a href="hod.desk.html">HOD DESK</a></li>
+                    <li><a href="vision and mission.html">VISION AND MISSION</a></li>
+                    <li><a href="faculty.html">FACULTY</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" id="menuicons" onclick="showMenu()"></i>
+        </nav>
+        <!-- tital -->
+        <h1>Contact Us</h1>
+    </section>
+    <section class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14995.516102749201!2d73.8222614!3d20.0135914!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bddebab15555555%3A0xdb01367e9d5cf969!2sK.%20K.%20Wagh%20Institute%20Of%20Engineering%20Education%20And%20Research!5e0!3m2!1sen!2sin!4v1700675356303!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    </section>
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa fa-graduation-cap"></i>
+                    <span>
+                        <h5>K. K. Wagh Institute Of Engineering Education And Research</h5>
+                        <p><i id="smallicon" class="fa fa-map-marker"></i>Nashik, Maharashtra</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-circle-o-notch"></i>
+                    <span>
+                        <h5>Highlight's</h5>
+                        <p><i id="smallicon" class="fa fa-university"></i>Ownership:Private </p>
+                        <p><i id="smallicon" class="fa fa-check-square-o"></i>Accreditation:NAAC</p>
+                        <p><i id="smallicon" class="fa fa-check"></i>Approval:Affiliated</p>
+                        <i id="smallicon" class="fa fa-calendar"></i>Estd.Year:1983</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <span>
+                        <h5>02532512867</h5>
+                        <p>Monday to Saturday, 10AM to 5PM</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-envelope-o"></i>
+                    <span>
+                        <h5>kkwieer@kkwagh.edu.in / kkwe_office@dataone.in</h5>
+                        <p>Email us your query</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-chrome" aria-hidden="true"></i>
+                    <h5><a href="https://www.vmvmlk.org/" target="_blank">https://engg.kkwagh.edu.in/</a></h5>
+                </div>
+                
+            </div>
+            <div class="contact-col">
+                <form action="process_data2.php" method="get">
+                    <input type="text" id="name" name="name" target="_blank" placeholder="Enter your name" required>
+                    <input type="email" id="e_id" name="e_id" target="_blank" placeholder="Enter email address" required>
+                    <input type="text" id="batch" name="batch" target="_blank" placeholder="Enter your batch" required>
+                    <textarea rows="8" id="msg" name="msg" target="_blank"  placeholder="Message" required></textarea>
+                   
+                    <a href="./contact.html"><button type="submit" class="hero-btn2 red-btn">Send Message
+                    </button></a>
+                </form>
+            </div>
+    </section>
+    <!-- javascript for toggle menu  -->
+    <SCript>
+
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0"
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px"
+        }
+    </SCript>
+    <!-- Footer-->
+    <section class="footer">
+        <h4>-About Us-</h4>
+        <p>Department of MCA,K K Wagh Institute of Engineering Education and Research Center ,Nashik</p>
+        <div class="icons">
+          <i class="fa fa-facebook"></i>
+          <i class="fa fa-twitter"></i>
+          <i class="fa fa-instagram"></i>
+          <i class="fa fa-linkedin"></i>
+        </div>
+        <p>Made By <i class="fa fa-laptop"></i>Pranav Lahitkar-Chetan Patil-Atharva Kawade</p>
+      </section>
+
+</body>
+
+</html>
